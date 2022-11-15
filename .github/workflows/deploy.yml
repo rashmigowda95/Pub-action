@@ -29,6 +29,7 @@ jobs:
         id: check-tag
         run: |
           if [[ ${{ inputs.image-tag }} =~/master\-v\d+(\.\d+){1,2}\-\d+\-g\w{7,7}-passed ]]; then
+          echo "hello"
           echo ::set-output name=match::true
           fi
 
@@ -39,6 +40,16 @@ jobs:
 
 
 
+      - name: Check Tag
+        id: check-tag
+        run: |
+          if [[ ${{ github.event.ref }} =~ ^refs/tags/v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+          echo ::set-output name=match::true
+          fi
+      - name: Build
+        if: steps.check-tag.outputs.match == 'true'
+        run: |
+        echo "Tag is a match"
 #      - name: Create Tag
 #        id: create_tag
 #        uses: jaywcjlove/create-tag-action@main
