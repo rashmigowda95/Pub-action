@@ -53,7 +53,7 @@ jobs:
         id: regex-match
         with:
           text: ${{ inputs.image-tag }}-${{ inputs.environment }}
-          regex: 'master-v\d+(?:\.\d+){1,2}-\d+-g\w+-passed'
+          regex: /master-v\d+(?:\.\d+){1,2}-\d+-g\w+-passed/
 #           flags: gm
           
           
