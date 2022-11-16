@@ -28,7 +28,7 @@ jobs:
       - name: Check Tag
         id: check-tag
         run: |
-           [[ ${{ inputs.image-tag }} =~ master-v\d+(\.\d+){1,2}\-\d+\-g\w+-passed ]] && echo "rashmi"
+           [[ "${{ inputs.image-tag }}" =~ master-v\d+(\.\d+){1,2}\-\d+\-g\w+-passed ]] && echo "rashmi"
 
       - name: Build
         if: steps.check-tag.outputs.match == 'true'
