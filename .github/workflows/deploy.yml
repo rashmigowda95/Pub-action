@@ -11,6 +11,10 @@ on:
         required: true
         description: Helm Chart Version
         type: string
+      environment:
+        required: true
+        description: Env value
+        type: string
 jobs:
   gradle:
     runs-on:  ubuntu-latest
@@ -48,7 +52,7 @@ jobs:
       - uses: actions-ecosystem/action-regex-match@v2
         id: regex-match
         with:
-          text: ${{ inputs.image-tag }}
+          text: ${{ inputs.image-tag }} + ${{ inputs.environment }}
           regex: 'master-v\d+(?:\.\d+){1,2}-\d+-g\w+-passed'
           
       - name: output    
