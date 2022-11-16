@@ -57,7 +57,7 @@ jobs:
           flags: gm
             
       - name: output    
-        if: ${{ steps.regex-match.outputs.match != '' }}
+        if: ${{ steps.regex-match.outputs.match == '' }}
         run: echo "hello"
       
           
