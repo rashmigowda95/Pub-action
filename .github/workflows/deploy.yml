@@ -28,7 +28,7 @@ jobs:
       - name: Check Tag
         id: check-tag
         run: |
-           if[[ "${{ inputs.image-tag }}" =~ master-v\d+(\.\d+){1,2}\-\d+\-g\w+-passed ]];
+           if [[ "${{ inputs.image-tag }}" =~ master-v\d+(\.\d+){1,2}\-\d+\-g\w+-passed ]];
            then
            echo "rashmi"
            fi
