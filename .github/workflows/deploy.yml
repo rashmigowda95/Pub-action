@@ -50,6 +50,7 @@ jobs:
         with:
           text: ${{ inputs.image-tag }}
           regex: 'master-v\d+(?:\.\d+){1,2}-\d+-g\w+-passed'
+          run: echo ${{ steps.regex-match.outputs.match }}
           
 
 
