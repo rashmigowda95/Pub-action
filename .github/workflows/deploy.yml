@@ -55,8 +55,7 @@ jobs:
           text: ${{ inputs.image-tag }}
           regex: /master-v\d+(?:\.\d+){1,2}-\d+-g\w+-passed/
           flags: gm
-          
-          
+            
       - name: output    
         if: ${{ steps.regex-match.outputs.match != '' }}
         run: echo "hello"
