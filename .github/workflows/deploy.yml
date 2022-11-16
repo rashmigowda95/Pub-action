@@ -54,7 +54,7 @@ jobs:
         with:
           text: ${{ inputs.image-tag }}
           regex: /master-v\d+(?:\.\d+){1,2}-\d+-g\w+-passed/
-#           flags: gm
+          flags: gm
           
           
       - name: output    
