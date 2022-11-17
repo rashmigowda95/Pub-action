@@ -51,7 +51,7 @@ jobs:
             const {DA} = process.env
             const reguarExp = new RegExp(/v\d+(?:\.\d+){1,2}-\d+-g\w+-passed-'${{ fromJson(env.DA)[inputs.environment] }}'/);
             console.log(reguarExp.test("${{ inputs.image-tag }}-passed-'${{ fromJson(env.DA)[inputs.environment] }}'"))
-            console.log(${DA})
+            console.log('${DA}')
       
       - uses: actions-ecosystem/action-regex-match@v2
         id: regex-match
