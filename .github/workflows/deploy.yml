@@ -63,6 +63,12 @@ jobs:
       - name: output    
         if: ${{ steps.regex-match.outputs.match == '' }}
         run: echo "hello"
+        
+      - name: HTML Preview
+        id: html_preview
+        uses: pavi2410/html-preview-action@v2
+        with:
+         html_file: 'index.html'
       
           
 
