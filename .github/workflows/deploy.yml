@@ -48,7 +48,7 @@ jobs:
         with:
          result-encoding: string
          script: |
-            const { data } = process.env
+            const {data} = process.env
             const reguarExp = new RegExp(/v\d+(?:\.\d+){1,2}-\d+-g\w+-passed-${{ fromJson(env.data)[inputs.environment] }}/);
             console.log(reguarExp.test("${{ inputs.image-tag }}-passed-${{ fromJson(env.data)[inputs.environment] }}"))
       
