@@ -19,7 +19,7 @@ jobs:
   gradle:
     runs-on:  ubuntu-latest
     env:
-      environment: '{"devl":"sandbox","qual":"devl"}'
+      data: '{"devl":"sandbox","qual":"devl"}'
     steps:
       - name: Checkout codebase
         uses: actions/checkout@v3
@@ -48,8 +48,8 @@ jobs:
         with:
          result-encoding: string
          script: |
-            const reguarExp = new RegExp(/v\d+(?:\.\d+){1,2}-\d+-g\w+-passed-${{ fromJson(env.environment)[inputs.environment] }}/);
-            console.log(reguarExp.test("${{ inputs.image-tag }}-passed-${{ fromJson(env.environment)[inputs.environment] }}"))
+            const reguarExp = new RegExp(/v\d+(?:\.\d+){1,2}-\d+-g\w+-passed-${{ fromJson(env.data)[inputs.environment] }}/);
+            console.log(reguarExp.test("${{ inputs.image-tag }}-passed-${{ fromJson(env.data)[inputs.environment] }}"))
       
       - uses: actions-ecosystem/action-regex-match@v2
         id: regex-match
