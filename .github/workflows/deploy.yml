@@ -45,6 +45,8 @@ jobs:
         
       - uses: actions/github-script@v6
         id: my-script
+        env:
+          DA: '{"devl":"sandbox","qual":"devl"}'
         with:
          result-encoding: string
          script: |
