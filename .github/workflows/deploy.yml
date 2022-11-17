@@ -51,8 +51,8 @@ jobs:
          result-encoding: string
          script: |
             const reguarExp = new RegExp(/v\d+(?:\.\d+){1,2}-\d+-g\w+-passed-"${{ fromJson(env.DA)[inputs.environment] }}"/);
+            string.replace(reguarExp, "replacement");
             console.log(reguarExp.test("${{ inputs.image-tag }}-passed-${{ fromJson(env.DA)[inputs.environment] }}"))
-            console.log('Hi ${DA}')
       
       - uses: actions-ecosystem/action-regex-match@v2
         id: regex-match
