@@ -6,9 +6,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+         fetch-depth: 0
         
       - name: changelog   
-        uses: srepollock/changelog-generator-action@master
+        uses: rashmigowda95/changelog-generator-action@master
         with:
           REPO_NAME: $ {{ github.repository }}
           ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
