@@ -6,6 +6,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+         fetch-depth: 0
       - name: Generate changelog
         uses: fabernovel/github-changelog-generator-action@v1.0.0-alpha02
         with:
