@@ -13,10 +13,9 @@ jobs:
       - name: Printing changelog
         run: |
          cat CHANGELOG.md 
-         ls
         
       - name: update chnage
         run: |
-          git add ./github/workspace/CHANGELOG.md
+          git add CHANGELOG.md
           git commit -m " change log file"
           git push
