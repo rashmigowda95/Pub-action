@@ -29,11 +29,12 @@ jobs:
           onlyLastTag: "true"
           stripHeaders: "true"
           stripGeneratorNotice: "true"
-      - name: "🚀 Create GitHub release"
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.SNAPSERV_BOT_TOKEN }}
+      - name: "✏️ Generate release changelog"
+        uses: heinrichreimer/github-changelog-generator-action@v2.3
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          body: ${{ steps.generate-release-changelog.outputs.changelog }}
+          token: ${{ secrets.SNAPSERV_BOT_TOKEN }} 
+         
+      - name: "add into changelog"
+        run: |
+          git 
+        
