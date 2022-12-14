@@ -21,18 +21,19 @@ jobs:
           source_file: 'package.json'
           version_pattern: '"version"\s*:\s*"(?<version>[0-9.]+)"'
           tag_format: 'v{version}'
-      - name: Changelog
-        uses: scottbrenner/generate-changelog-action@master
-        id: Changelog
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@latest
+      - name: "✏️ Generate release changelog"
+        id: generate-release-changelog
+        uses: heinrichreimer/github-changelog-generator-action@v2.3
+        with:
+          token: ${{ secrets.SNAPSERV_BOT_TOKEN }}
+          onlyLastTag: "true"
+          stripHeaders: "true"
+          stripGeneratorNotice: "true"
+      - name: "🚀 Create GitHub release"
+        uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.SNAPSERV_BOT_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+          GITHUB_TOKEN: ${{ secrets.SNAPSERV_BOT_TOKEN }}
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
-          body: |
-            ${{ steps.Changelog.outputs.changelog }}
-          draft: false
-          prerelease: false
+          body: ${{ steps.generate-release-changelog.outputs.changelog }}
