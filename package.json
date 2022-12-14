@@ -1,6 +1,6 @@
 {
   "name": "action-autotagbot",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Automatically tag commits by extracting the current version from a given source file.",
   "main": "main.js",
   "scripts": {
