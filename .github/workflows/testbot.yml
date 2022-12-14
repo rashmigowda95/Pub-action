@@ -21,8 +21,8 @@ jobs:
           source_file: 'package.json'
           version_pattern: '"version"\s*:\s*"(?<version>[0-9.]+)"'
           tag_format: 'v{version}'
-      - name: Changelog
-        uses: scottbrenner/generate-changelog-action@master
-        id: Changelog
+      - name: Generate changelog
+        uses: fabernovel/github-changelog-generator-action@v1.0.0-alpha02
         with:
-         allow-unknown: ''
+      # You can pass any parameters from https://github.com/github-changelog-generator/github-changelog-generator/wiki/Advanced-change-log-generation-examples#additional-options
+          options: --token ${{ secrets.SNAPSERV_BOT_TOKEN }}
