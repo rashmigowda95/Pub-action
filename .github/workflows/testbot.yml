@@ -21,8 +21,7 @@ jobs:
           source_file: 'package.json'
           version_pattern: '"version"\s*:\s*"(?<version>[0-9.]+)"'
           tag_format: 'v{version}'
-      - name: Build Changelog
-        id: github_release
-        uses: mikepenz/release-changelog-builder-action@v3
-        env:
-          GITHUB_TOKEN: '${{ secrets.SNAPSERV_BOT_TOKEN }}'     
+      - name: "✏️ Generate release changelog"
+        uses: heinrichreimer/github-changelog-generator-action@v2.3
+        with:
+          token: ${{ secrets.SNAPSERV_BOT_TOKEN }}     
