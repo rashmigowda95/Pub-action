@@ -8,11 +8,19 @@ jobs:
         uses: actions/checkout@v2
         with:
          fetch-depth: 0
-        
+         
+      - name: Release new versions using AutoTagBot
+        uses: snapserv/action-autotagbot@master
+        with:
+          api_token: '${{ secrets.SNAPSERV_BOT_TOKEN }}'
+          source_file: 'package.json'
+          version_pattern: '"version"\s*:\s*"(?<version>[0-9.]+)"'
+          tag_format: 'v{version}'  
+      
       - name: changelog   
         uses: rashmigowda95/changelog-generator-action@master
         with:
           REPO_NAME: ${{ github.repository }}
-          ACCESS_TOKEN: ${{secrets.SNAPSERV_BOT_TOKEN}}
+          ACCESS_TOKEN: ${{github.token}}
           PATH: '/CHANGELOG.md'
-          COMMIT_MESSAGE: 'docs(CHANGELOG): update release notes'
+          
