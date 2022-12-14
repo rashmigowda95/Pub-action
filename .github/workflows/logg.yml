@@ -11,7 +11,9 @@ jobs:
         with:
           options: --token ${{ secrets.GITHUB_TOKEN }}
       - name: Printing changelog
-        run: cat CHANGELOG.md
+        run: |
+         cat CHANGELOG.md 
+         ls
         
       - name: update chnage
         run: |
