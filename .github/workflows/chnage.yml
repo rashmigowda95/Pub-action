@@ -13,6 +13,6 @@ jobs:
         uses: rashmigowda95/changelog-generator-action@master
         with:
           REPO_NAME: $ {{ github.repository }}
-          ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          ACCESS_TOKEN: ${{secrets.SNAPSERV_BOT_TOKEN}}
           PATH: '/CHANGELOG.md'
           COMMIT_MESSAGE: 'docs(CHANGELOG): update release notes'
