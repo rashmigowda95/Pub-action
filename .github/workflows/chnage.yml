@@ -6,9 +6,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Generate changelog
-        uses: fabernovel/github-changelog-generator-action@v1.0.0-alpha02
+        
+      - name: changelog   
+        uses: srepollock/changelog-generator-action@master
         with:
-          options: --token ${{ secrets.GITHUB_TOKEN }}
-      - name: Printing changelog
-        run: cat CHANGELOG.md
+          REPO_NAME: $ {{ github.repository }}
+          ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          PATH: '/CHANGELOG.md'
+          COMMIT_MESSAGE: 'docs(CHANGELOG): update release notes'
