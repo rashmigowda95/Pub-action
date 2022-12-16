@@ -23,8 +23,4 @@ jobs:
           REPO_NAME: ${{ github.repository }}
           ACCESS_TOKEN: ${{github.token}}
           PATH: '/CHANGELOG.md'
-          jira_server: 'https://jira'
-          username: 'rashmi'
-          password: '12345'
-          
           
