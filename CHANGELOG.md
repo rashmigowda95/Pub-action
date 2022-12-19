@@ -1,5 +1,9 @@
 # Changelog
 
+## [v3.1.1](https://github.com/rashmigowda95/Pub-action/tree/v3.1.1) (2022-12-19)
+
+[Full Changelog](https://github.com/rashmigowda95/Pub-action/compare/v3.0.9...v3.1.1)
+
 ## [v3.0.9](https://github.com/rashmigowda95/Pub-action/tree/v3.0.9) (2022-12-14)
 
 [Full Changelog](https://github.com/rashmigowda95/Pub-action/compare/v2.0.9...v3.0.9)
