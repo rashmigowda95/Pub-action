@@ -19,10 +19,7 @@ jobs:
       - name: update the chnagelog
         uses: BobAnkh/auto-generate-changelog@v1.2.3
         with:
-          REPO_NAME: '<YourUserName>/<YourRepoName>'
           ACCESS_TOKEN: ${{github.token}}
-          PATH: 'CHANGELOG.md'
-          COMMIT_MESSAGE: 'docs(CHANGELOG): update release notes'
           TYPE: 'feat:Feature,fix:Bug Fixes,docs:Documentation,refactor:Refactor,perf:Performance Improvements'
           
       - name: Jira-integration
