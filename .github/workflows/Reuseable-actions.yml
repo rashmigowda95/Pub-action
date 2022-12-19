@@ -1,0 +1,40 @@
+on: [push]
+
+jobs:
+  test_action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+         fetch-depth: 0
+         
+      - name: Release new versions using AutoTagBot
+        uses: snapserv/action-autotagbot@master
+        with:
+          api_token: '${{ secrets.SNAPSERV_BOT_TOKEN }}'
+          source_file: 'package.json'
+          version_pattern: '"version"\s*:\s*"(?<version>[0-9.]+)"'
+          tag_format: 'v{version}' 
+      - name: Generate changelog
+        uses: fabernovel/github-changelog-generator-action@v1.0.0-alpha02
+        with:
+          options: --token ${{ secrets.GITHUB_TOKEN }}
+      - name: Printing changelog
+        run: |
+         cat CHANGELOG.md 
+        
+      - name: update chnage
+        run: |
+          git add CHANGELOG.md
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git commit -m " change log file"
+          git push origin master
+          
+      - name: Jira-integration
+        uses: john-d-pelingo/jira-link-issue-action@v1
+        with:
+          atlassian-domain: 'https://rashmingowda95.atlassian.net/'
+          GITHUB_TOKEN: ${{github.token}}
+          board-name: 'LJGI board'   
