@@ -1,0 +1,24 @@
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: Changelog
+    steps:
+      - name: Set Version
+        run: echo ::set-env name=VERSION::1.1.1
+      # To use this repository's private action, you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Changelog
+        id: changelog
+        uses: actions/jira-changelog@v1.1.4
+        with:
+          jira_host: 'rashmingowda95.atlassian.net'
+          jira_email: 'rashmingowda95@gmail.com'
+          jira_token: 'yTA897aGppOUi91pcvwABA84'
+          jira_base_url: 'https://rashmingowda95.atlassian.net/'
+          source_control_range_from: 'develop'
+          source_control_range_to: 'master'
+      - name: Get the changelog message
+        run: echo "${{ steps.changelog.outputs.changelog_message }}"
