@@ -25,8 +25,5 @@ jobs:
         uses: heinrichreimer/github-changelog-generator-action@v2.3
         with:
           token: ${{ secrets.SNAPSERV_BOT_TOKEN }} 
-         
-      - name: "add into changelog"
-        run: |
-          git 
+       
         
