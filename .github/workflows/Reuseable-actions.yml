@@ -21,11 +21,4 @@ jobs:
         with:
           ACCESS_TOKEN: ${{github.token}}
           TYPE: 'feat:Feature,fix:Bug Fixes,docs:Documentation,refactor:Refactor,perf:Performance Improvements'
-          
-      - name: Jira-integration
-        uses: john-d-pelingo/jira-link-issue-action@v1.1.2
-        with:
-          atlassian-domain: 'https://rashmingowda95.atlassian.net/'
-          board-name: 'LJGI board'   
-          github-token: ${{github.token}}
-          
+        
