@@ -17,7 +17,7 @@ jobs:
           version_pattern: '"version"\s*:\s*"(?<version>[0-9.]+)"'
           tag_format: 'v{version}' 
       - name: update the chnagelog
-        uses: BobAnkh/auto-generate-changelog@v1
+        uses: BobAnkh/auto-generate-changelog@v1.2.3
         with:
           REPO_NAME: '<YourUserName>/<YourRepoName>'
           ACCESS_TOKEN: ${{github.token}}
