@@ -26,6 +26,6 @@ jobs:
         uses: john-d-pelingo/jira-link-issue-action@v1.1.2
         with:
           atlassian-domain: 'https://rashmingowda95.atlassian.net/'
-          board-name: 'LJGI'   
+          board-name: 'LJGI board'   
           github-token: ${{github.token}}
           
