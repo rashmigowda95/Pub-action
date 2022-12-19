@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## [v3.1.5](https://github.com/rashmigowda95/Pub-action/releases/tag/v3.1.5) - 2022-12-19 13:20:11
+
+* docs(changelog): update release notes (github-actions[bot])
+* docs(CHANGELOG): update release notes (rashmigowda95)
+* checking feature (rashmigowda95)
+* deature update (rashmigowda95)
+* feature (rashmigowda95)
+
+### Feature
+
+- general:
+  - feature ([2995b46](https://github.com/rashmigowda95/Pub-action/commit/2995b465807b51d4a0ea21505bdc4b722d31c0d5))
+
 ## [v3.1.4](https://github.com/rashmigowda95/Pub-action/releases/tag/v3.1.4) - 2022-12-19 12:01:14
 
 * "LGJGI-1 fix(github): follow check behavior of pygithub" (rashmigowda95)
