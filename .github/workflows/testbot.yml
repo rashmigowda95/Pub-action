@@ -22,14 +22,6 @@ jobs:
           version_pattern: '"version"\s*:\s*"(?<version>[0-9.]+)"'
           tag_format: 'v{version}'
       - name: "✏️ Generate release changelog"
-        id: generate-release-changelog
-        uses: heinrichreimer/github-changelog-generator-action@v2.3
-        with:
-          token: ${{ secrets.SNAPSERV_BOT_TOKEN }}
-          onlyLastTag: "true"
-          stripHeaders: "true"
-          stripGeneratorNotice: "true"
-      - name: "✏️ Generate release changelog"
         uses: heinrichreimer/github-changelog-generator-action@v2.3
         with:
           token: ${{ secrets.SNAPSERV_BOT_TOKEN }} 
