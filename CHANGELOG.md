@@ -1,86 +1,173 @@
-# Changelog
+# CHANGELOG
 
-## [v3.1.1](https://github.com/rashmigowda95/Pub-action/tree/v3.1.1) (2022-12-19)
+## [v3.1.3](https://github.com/rashmigowda95/Pub-action/releases/tag/v3.1.3) - 2022-12-19 10:51:15
 
-[Full Changelog](https://github.com/rashmigowda95/Pub-action/compare/v3.0.9...v3.1.1)
+* cheking (rashmigowda95)
+* testing (rashmigowda95)
+* Pushing the master (rashmigowda95)
 
-## [v3.0.9](https://github.com/rashmigowda95/Pub-action/tree/v3.0.9) (2022-12-14)
+## [v3.1.2](https://github.com/rashmigowda95/Pub-action/releases/tag/v3.1.2) - 2022-12-19 09:00:21
 
-[Full Changelog](https://github.com/rashmigowda95/Pub-action/compare/v2.0.9...v3.0.9)
+*  change log file (github-actions[bot])
+* updtae msg (rashmigowda95)
 
-## [v2.0.9](https://github.com/rashmigowda95/Pub-action/tree/v2.0.9) (2022-12-14)
+## [v3.1.1](https://github.com/rashmigowda95/Pub-action/releases/tag/v3.1.1) - 2022-12-19 08:49:16
 
-[Full Changelog](https://github.com/rashmigowda95/Pub-action/compare/v2.0.4...v2.0.9)
+* docs(CHANGELOG): update release notes (github-actions[bot])
+* docs(CHANGELOG): update release notes (github-actions[bot])
+* check new (rashmigowda95)
+* docs(CHANGELOG): update release notes (github-actions[bot])
+* final check (rashmigowda95)
+* docs(CHANGELOG): update release notes (github-actions[bot])
+* trry (rashmigowda95)
+* chekiu-test (rashmigowda95)
+* docs(CHANGELOG): update release notes (github-actions[bot])
+* checking with bot (rashmigowda95)
+* push to master (rashmigowda95)
+* test (rashmigowda95)
+*  change log file (github-actions[bot])
+* jira (rashmigowda95)
+* jech py version (rashmigowda95)
+* check without test (rashmigowda95)
+* test fort push (rashmigowda95)
+* jira (rashmigowda95)
+* hj (rashmigowda95)
+* test jira auth (rashmigowda95)
+* hjeh (rashmigowda95)
+* test (rashmigowda95)
+* jira inte (rashmigowda95)
+* code fix jira (rashmigowda95)
+* jira int (rashmigowda95)
+* Delete .github/workflows/name: Try GitHub Action  on: [push]  jobs:   try-github-action-jira-integration:     name: Try GitHub Action     runs-on: ubuntu-latest     steps:       - name: Checkout repository         uses: john-d-pelingo/jira-link-issue-action@v1         with:           atlassian-domain: 'https:/rashmingowda95.atlassian.net directory (rashmigowda95)
+* Added the al ction is in re0uaeable (rashmigowda95)
+* fixed the verion (rashmigowda95)
+* LJGI-1 [Rashmi] update the version to check integration with jira (rashmigowda95)
 
-## [v2.0.4](https://github.com/rashmigowda95/Pub-action/tree/v2.0.4) (2022-12-14)
+### Bug Fixes
 
-[Full Changelog](https://github.com/rashmigowda95/Pub-action/compare/v3.0.4...v2.0.4)
+- general:
+  - fixed the verion ([854b484](https://github.com/rashmigowda95/Pub-action/commit/854b484192546a1bf52dab3d06e0797604a5660f))
 
-## [v3.0.4](https://github.com/rashmigowda95/Pub-action/tree/v3.0.4) (2022-12-14)
+## [v3.0.9](https://github.com/rashmigowda95/Pub-action/releases/tag/v3.0.9) - 2022-12-14 15:42:35
 
-[Full Changelog](https://github.com/rashmigowda95/Pub-action/compare/v3.0.3...v3.0.4)
+* check (rashmigowda95)
+* checking (rashmigowda95)
+* check (rashmigowda95)
+* chnage log (rashmigowda95)
+* checking log (rashmigowda95)
+* checking-again (rashmigowda95)
+* last check (rashmigowda95)
+* docs(CHANGELOG): update release notes (rashmigowda95)
+* docs(CHANGELOG): update release notes (rashmigowda95)
+* docs(CHANGELOG): update release notes (rashmigowda95)
+* docs(CHANGELOG): update release notes (rashmigowda95)
+* checking now with commit (rashmigowda95)
+* docs(CHANGELOG): update release notes (github-actions[bot])
+* checking change log (rashmigowda95)
+* docs(CHANGELOG): update release notes (github-actions[bot])
+* docs(CHANGELOG): update release notes (github-actions[bot])
+* test the fix (rashmigowda95)
 
-## [v3.0.3](https://github.com/rashmigowda95/Pub-action/tree/v3.0.3) (2022-12-14)
+## [v3.0.4](https://github.com/rashmigowda95/Pub-action/releases/tag/v3.0.4) - 2022-12-14 14:51:40
 
-[Full Changelog](https://github.com/rashmigowda95/Pub-action/compare/v3.0.1...v3.0.3)
+* che (rashmigowda95)
+* jhkyh (rashmigowda95)
 
-## [v3.0.1](https://github.com/rashmigowda95/Pub-action/tree/v3.0.1) (2022-12-14)
+## [v3.0.3](https://github.com/rashmigowda95/Pub-action/releases/tag/v3.0.3) - 2022-12-14 14:47:26
 
-[Full Changelog](https://github.com/rashmigowda95/Pub-action/compare/v3.0.0...v3.0.1)
+* vheg (rashmigowda95)
+* hujhyu (rashmigowda95)
+* che (rashmigowda95)
+* hye (rashmigowda95)
 
-## [v3.0.0](https://github.com/rashmigowda95/Pub-action/tree/v3.0.0) (2022-12-14)
+## [v3.0.1](https://github.com/rashmigowda95/Pub-action/releases/tag/v3.0.1) - 2022-12-14 14:34:34
 
-[Full Changelog](https://github.com/rashmigowda95/Pub-action/compare/v2.0.0...v3.0.0)
+* Update testbot.yml (rashmigowda95)
+* checkc chng (rashmigowda95)
 
-## [v2.0.0](https://github.com/rashmigowda95/Pub-action/tree/v2.0.0) (2022-12-14)
+## [v3.0.0](https://github.com/rashmigowda95/Pub-action/releases/tag/v3.0.0) - 2022-12-14 14:32:52
 
-[Full Changelog](https://github.com/rashmigowda95/Pub-action/compare/v1.0.9...v2.0.0)
+* che (rashmigowda95)
+* gy (rashmigowda95)
 
-## [v1.0.9](https://github.com/rashmigowda95/Pub-action/tree/v1.0.9) (2022-12-14)
+## [v2.0.9](https://github.com/rashmigowda95/Pub-action/releases/tag/v2.0.9) - 2022-12-14 15:38:41
 
-[Full Changelog](https://github.com/rashmigowda95/Pub-action/compare/v1.0.8...v1.0.9)
+* check (rashmigowda95)
+* checking (rashmigowda95)
+* check (rashmigowda95)
+* chnage log (rashmigowda95)
+* checking log (rashmigowda95)
+* checking-again (rashmigowda95)
+* last check (rashmigowda95)
+* docs(CHANGELOG): update release notes (rashmigowda95)
+* docs(CHANGELOG): update release notes (rashmigowda95)
+* docs(CHANGELOG): update release notes (rashmigowda95)
+* docs(CHANGELOG): update release notes (rashmigowda95)
+* checking now with commit (rashmigowda95)
+* docs(CHANGELOG): update release notes (github-actions[bot])
+* checking change log (rashmigowda95)
 
-## [v1.0.8](https://github.com/rashmigowda95/Pub-action/tree/v1.0.8) (2022-12-14)
+## [v2.0.4](https://github.com/rashmigowda95/Pub-action/releases/tag/v2.0.4) - 2022-12-14 15:25:45
 
-[Full Changelog](https://github.com/rashmigowda95/Pub-action/compare/v1.0.7...v1.0.8)
+* check (rashmigowda95)
+* checking (rashmigowda95)
+* check (rashmigowda95)
+* chnage log (rashmigowda95)
+* checking log (rashmigowda95)
 
-## [v1.0.7](https://github.com/rashmigowda95/Pub-action/tree/v1.0.7) (2022-12-14)
+## [v2.0.0](https://github.com/rashmigowda95/Pub-action/releases/tag/v2.0.0) - 2022-12-14 14:30:19
 
-[Full Changelog](https://github.com/rashmigowda95/Pub-action/compare/v1.0.5...v1.0.7)
+* RASHMI allow
 
-## [v1.0.5](https://github.com/rashmigowda95/Pub-action/tree/v1.0.5) (2022-12-14)
+## [v1.0.9](https://github.com/rashmigowda95/Pub-action/releases/tag/v1.0.9) - 2022-12-14 14:16:39
 
-[Full Changelog](https://github.com/rashmigowda95/Pub-action/compare/v1.0.4...v1.0.5)
+* Update testbot.yml (rashmigowda95)
+* tg (rashmigowda95)
 
-## [v1.0.4](https://github.com/rashmigowda95/Pub-action/tree/v1.0.4) (2022-12-14)
+## [v1.0.8](https://github.com/rashmigowda95/Pub-action/releases/tag/v1.0.8) - 2022-12-14 14:09:00
 
-[Full Changelog](https://github.com/rashmigowda95/Pub-action/compare/v1.0.3...v1.0.4)
+* hy (rashmigowda95)
+* chy (rashmigowda95)
 
-## [v1.0.3](https://github.com/rashmigowda95/Pub-action/tree/v1.0.3) (2022-12-13)
+## [v1.0.7](https://github.com/rashmigowda95/Pub-action/releases/tag/v1.0.7) - 2022-12-14 14:02:29
 
-[Full Changelog](https://github.com/rashmigowda95/Pub-action/compare/v1.0.2...v1.0.3)
+* check (rashmigowda95)
+* hey (rashmigowda95)
+* test (rashmigowda95)
+* chek (rashmigowda95)
 
-## [v1.0.2](https://github.com/rashmigowda95/Pub-action/tree/v1.0.2) (2022-12-13)
+## [v1.0.5](https://github.com/rashmigowda95/Pub-action/releases/tag/v1.0.5) - 2022-12-14 13:49:33
 
-[Full Changelog](https://github.com/rashmigowda95/Pub-action/compare/v1.0.1...v1.0.2)
+* test
+* tf (rashmigowda95)
 
-## [v1.0.1](https://github.com/rashmigowda95/Pub-action/tree/v1.0.1) (2022-12-13)
+## [v1.0.4](https://github.com/rashmigowda95/Pub-action/releases/tag/v1.0.4) - 2022-12-14 13:39:56
 
-[Full Changelog](https://github.com/rashmigowda95/Pub-action/compare/v1.0.0...v1.0.1)
+* test (rashmigowda95)
+* hello (rashmigowda95)
 
-## [v1.0.0](https://github.com/rashmigowda95/Pub-action/tree/v1.0.0) (2022-12-13)
+## [v1.0.3](https://github.com/rashmigowda95/Pub-action/releases/tag/v1.0.3) - 2022-12-13 18:15:33
 
-[Full Changelog](https://github.com/rashmigowda95/Pub-action/compare/v0.1.3...v1.0.0)
+* n (rashmigowda95)
+* y (rashmigowda95)
 
-## [v0.1.3](https://github.com/rashmigowda95/Pub-action/tree/v0.1.3) (2022-12-13)
+## [v1.0.2](https://github.com/rashmigowda95/Pub-action/releases/tag/v1.0.2) - 2022-12-13 18:05:05
 
-[Full Changelog](https://github.com/rashmigowda95/Pub-action/compare/e080a2efe8d5abdf57b6f1d57df438bcc21efac8...v0.1.3)
+* testing
+* Create CHANGELOG.md (rashmigowda95)
+* change (rashmigowda95)
 
-**Merged pull requests:**
+## [v1.0.1](https://github.com/rashmigowda95/Pub-action/releases/tag/v1.0.1) - 2022-12-13 17:04:04
 
-- CHeck [\#2](https://github.com/rashmigowda95/Pub-action/pull/2) ([rashmigowda95](https://github.com/rashmigowda95))
-- CHeck [\#1](https://github.com/rashmigowda95/Pub-action/pull/1) ([rashmigowda95](https://github.com/rashmigowda95))
+* test (rashmigowda95)
+* fghrfmjh
 
+## [v1.0.0](https://github.com/rashmigowda95/Pub-action/releases/tag/v1.0.0) - 2022-12-13 16:54:50
 
+* ver (rashmigowda95)
 
-\* *This Changelog was automatically generated by [github_changelog_generator](https://github.com/github-changelog-generator/github-changelog-generator)*
+## [v0.1.3](https://github.com/rashmigowda95/Pub-action/releases/tag/v0.1.3) - 2022-12-13 16:52:45
+
+Initial tag
+
+\* *This CHANGELOG was automatically generated by [auto-generate-changelog](https://github.com/BobAnkh/auto-generate-changelog)*
