@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## [v3.1.4](https://github.com/rashmigowda95/Pub-action/releases/tag/v3.1.4) - 2022-12-19 12:01:14
+
+* "LGJGI-1 fix(github): follow check behavior of pygithub" (rashmigowda95)
+* "LGJGI-1 fix(github): follow check behavior of pygithub" (rashmigowda95)
+* "LGJGI-1 fix(github): follow check behavior of pygithub" (rashmigowda95)
+* docs(changelog): update release notes (github-actions[bot])
+* "LGJGI-1 fix(github): follow check behavior of pygithub" (rashmigowda95)
+* "LGJGI-1 fix(github): fixing the jira ssue" (rashmigowda95)
+* LJGI-1 fix(analyze): deal with search failure (rashmigowda95)
+
 ## [v3.1.3](https://github.com/rashmigowda95/Pub-action/releases/tag/v3.1.3) - 2022-12-19 10:51:15
 
 * cheking (rashmigowda95)
