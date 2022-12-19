@@ -1,0 +1,20 @@
+name: Try GitHub Action
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  try-github-action:
+    name: Try GitHub Action
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Use this GitHub Action
+        uses: ./
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          atlassian-domain: 'https://rashmingowda95.atlassian.net/'
+          board-name: 'LJGI board'
