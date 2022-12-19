@@ -33,7 +33,7 @@ jobs:
           git push origin master
           
       - name: Jira-integration
-        uses: john-d-pelingo/jira-link-issue-action@v1
+        uses: john-d-pelingo/jira-link-issue-action@v1.1.2
         with:
           atlassian-domain: 'https://rashmingowda95.atlassian.net/'
           GITHUB_TOKEN: ${{github.token}}
