@@ -16,7 +16,7 @@ jobs:
           version_pattern: '"version"\s*:\s*"(?<version>[0-9.]+)"'
           tag_format: 'v{version}'    
       - name: update the chnagelog
-        uses: BobAnkh/auto-generate-changelog@v1.2.3
+        uses: rashmigowda95/auto-generate-changelog@master
         with:
           ACCESS_TOKEN: ${{github.token}}
           TYPE: 'feat:Feature,fix:Bug Fixes,docs:Documentation,refactor:Refactor,perf:Performance Improvements'
