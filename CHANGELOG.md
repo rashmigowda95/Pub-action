@@ -10,6 +10,14 @@
 
 * update the fix stnax isue in pthon (rashmigowda95)
 
+## [v4.0.4](https://github.com/rashmigowda95/Pub-action/releases/tag/v4.0.4) - 2022-12-21 07:24:41
+
+* update the fix stnax isue in pthon (rashmigowda95)
+* checking (rashmigowda95)
+* docs(changelog): update release notes (github-actions[bot])
+* last (rashmigowda95)
+* last commit to fix the contastan value (rashmigowda95)
+
 ## [v4.0.3](https://github.com/rashmigowda95/Pub-action/releases/tag/v4.0.3) - 2022-12-21 06:29:05
 
 * docs(changelog): update release notes (github-actions[bot])
