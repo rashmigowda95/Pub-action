@@ -8,14 +8,6 @@ jobs:
         uses: actions/checkout@v2
         with:
          fetch-depth: 0
-         
-      - name: Release new versions using AutoTagBot
-        uses: snapserv/action-autotagbot@master
-        with:
-          api_token: '${{ secrets.SNAPSERV_BOT_TOKEN }}'
-          source_file: 'package.json'
-          version_pattern: '"version"\s*:\s*"(?<version>[0-9.]+)"'
-          tag_format: 'v{version}' 
       - name: update the chnagelog
         uses: BobAnkh/auto-generate-changelog@v1.2.3
         with:
