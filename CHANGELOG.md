@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## [v4.0.3](https://github.com/rashmigowda95/Pub-action/releases/tag/v4.0.3) - 2022-12-21 06:29:05
+
+* docs(changelog): update release notes (github-actions[bot])
+* [LJGI-1 ]checking jira int (rashmigowda95)
+* update the chnagelog with new fix (rashmigowda95)
+* update hnage fix (rashmigowda95)
+* checking by modifyint ht  feature of package json file (rashmigowda95)
+* update the fauter of package json (rashmigowda95)
+
 ## [v3.1.5](https://github.com/rashmigowda95/Pub-action/releases/tag/v3.1.5) - 2022-12-19 13:20:11
 
 * docs(changelog): update release notes (github-actions[bot])
