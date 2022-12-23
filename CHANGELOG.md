@@ -1,3 +1,12 @@
+# [4.1.0](https://github.com/snapserv/action-tagbot/compare/v4.0.5...v4.1.0) (2022-12-23)
+
+
+### Features
+
+* Update action to node 16 ([74a8561](https://github.com/snapserv/action-tagbot/commit/74a856127dab6437b29d3ad586a9365ad7119f41))
+
+
+
 ## [4.0.5](https://github.com/snapserv/action-tagbot/compare/v4.0.4...v4.0.5) (2022-12-23)
 
 
@@ -16,10 +25,6 @@
 
 
 ## [4.1.1](https://github.com/snapserv/action-tagbot/compare/v4.1.3...v4.1.1) (2022-12-21)
-
-
-
-## [4.1.3](https://github.com/snapserv/action-tagbot/compare/v4.0.3...v4.1.3) (2022-12-21)
 
 
 
