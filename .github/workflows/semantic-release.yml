@@ -6,20 +6,29 @@ name: Release
       - main
       - beta
       - "*.x"
+
 jobs:
   release:
-    name: release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v2
         with:
          fetch-depth: 0
-      - uses: actions/setup-node@v3
+
+      - name: Generate changelog
+        id: changelog
+        uses: TriPSs/conventional-changelog-action@v3
         with:
-          cache: npm
-          node-version: 16
-      - run: npm ci
-      - run: npx semantic-release
+          github-token: ${{ secrets.SNAPSERV_BOT_TOKEN }}
+          create-summary: true
+
+      - name: Create Release
+        uses: actions/create-release@v1
+        if: steps.changelog.outputs.skipped != 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.SNAPSERV_BOT_TOKEN }}
-          NPM_TOKEN: ${{ secrets.SEMANTIC_RELEASE_BOT_NPM_TOKEN }}
+        with:
+          tag_name: ${{ steps.changelog.outputs.tag }}
+          release_name: ${{ steps.changelog.outputs.tag }}
+          body: ${{ steps.changelog.outputs.clean_changelog }}
